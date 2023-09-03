@@ -43,6 +43,8 @@ export default {
     handleClick() {
       this.prompts = [];
       this.prompts.push(this.snippet);
+      this.selectedPrompts = [];
+      this.selectedPrompt = "";
       this.articlePrompt();
       Array.from({ length: 5 }, () => {
         const addons = [];
